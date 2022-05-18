@@ -1,0 +1,136 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+
+	background: #ccc url("../img/bg.jpg") no-repeat center / cover;
+	
+	line-height: 1.2;
+
+	color: #3d4143;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 320px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.bank-card__label {
+	display: inline-block;
+}
+
+.bank-card {
+	width: 100%;
+	max-width: 500px;
+	background-color: #3c4053;
+	background-image: url(../img/moon_flag.png);
+	background-repeat: no-repeat;
+	background-size: 270px;
+	background-position: right -80px bottom -60px;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.bank-card__title {
+	background: #da6324;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	margin-left: -50px;
+	padding-left: 50px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.bank-card__title span {
+	font-size: 18px;
+	color: rgba(255,255,255,.9);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	line-height: 0;
+}
+
+.bank-card__input {
+	min-height: 36px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	color: #ffffff;
+	background: rgba(255,255,255,.2);
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, .3)
+}
+
+
+
+.bank-card__input::placeholder {
+	opacity: .3;
+	color: #ffffff;
+}
+
+
+
+.bank-card__label {
+	margin-bottom: 5px;
+	white-space: nowrap;
+	color: rgba(255,255,255,.7);
+}
+
+.date-content {
+	display: inline-flex;
+}
+
+.date-content__year {
+	align-self: flex-end;
+}
+
+.date-content {
+	width: 100%;
+	max-width: 350px;
+	gap: 20px;
+	display: inline-flex;
+}
+
+.date-content .bank-card__input {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+@media (max-width: 520px) {
+	.date-content {
+		flex-wrap: wrap;
+		gap: 0;
+	}
+
+	.date-content >*:not(:last-child){
+		margin-bottom: 20px;
+	}
+
+	.date-content__year {
+		align-self: center;
+	}
+}

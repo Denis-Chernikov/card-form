@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Form</title>
+</head>
+<body>
+<div class="wrapper">
+	<form action="/" class="bank-card" method="get">
+		<div class="bank-card__title"><span>Credit card details</span></div>
+		<label class="bank-card__label" for="card-number">Card Number</label>
+		<input type="text" class="bank-card__input" placeholder="1234 5678 9012 3456" id="card-number" maxlength="16">
+		<label class="bank-card__label" for="name-on-card">Name On Card</label>
+		<input type="text" class="bank-card__input" placeholder="Name Surname" id="name-on-card">
+
+		<div class="bank-card__date-content date-content">
+			<div class="date-content__month">
+				<label class="bank-card__label" for="date-content__month">Expiry Date</label>
+				<input type="text" class="bank-card__input" placeholder="02" id="date-content__month" maxlength="2" autocomplete="off">
+			</div>
+			<div class="date-content__year">
+				<input type="text" class="bank-card__input" placeholder="2017" id="date-content__year" maxlength="4" autocomplete="off">
+			</div>
+			<div class="date-content__cod">
+				<label class="bank-card__label" for="date-content__cod">CVV / CVN</label>
+				<input type="password" class="bank-card__input" placeholder="***" id="date-content__cod" maxlength="3" autocomplete="off">
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>
